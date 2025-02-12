@@ -2,12 +2,12 @@ version: "3.9"
 services:
   frontend:
     build:
-      context: ./frontend 
+      context: ./lnd
     container_name: frontend  
     command: npm start
     restart: always
     volumes:
-      - ./frontend:/app
+      - ./lnd:/app
     ports:
       - "3000:3000"
     stdin_open: true
