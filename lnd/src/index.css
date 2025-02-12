@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: terenza;
+  src: url(../public/fonts/Alata-Regular.ttf);
+}
+@font-face {
+  font-family: soli;
+  src: url(../public/fonts/PrStart.ttf);
+}
+@font-face {
+  font-family: kalamer;
+  src: url(../public/fonts/KALAMEH_REGULAR.TTF);
+}
+@font-face {
+  font-family: popi;
+  src: url(../public/fonts/Poppins-ExtraLight.otf);
+}
+.kalamer {
+  font-family: kalamer;
+}
+.popi {
+  font-family: popi;
+}
+.terenza {
+  font-family: terenza;
+}
+.soli {
+  font-family: soli;
+}
+.bg-gradient-custom {
+  background: linear-gradient(
+    135deg,
+    #000000,
+    #ff0000 25%,
+    #000000 50%,
+    #1e90ff 75%,
+    #000000 100%
+  );
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.swing {
+  animation: swing 2s infinite;
+}
