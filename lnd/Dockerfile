@@ -11,7 +11,7 @@ RUN npm install
 RUN npm install -g react-scripts
 
 COPY . .
-ENV PATH="/app/node_modules/.bin:$PATH"
+# ENV PATH="/app/node_modules/.bin:$PATH"
 EXPOSE 3000
 # اجرای اپلیکیشن
 CMD ["npm", "start"]
