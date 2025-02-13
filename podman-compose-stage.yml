@@ -6,8 +6,6 @@ services:
     container_name: frontend  
     command: npm start
     restart: always
-    volumes:
-      - ./lnd:/app
     ports:
       - "3000:3000"
     stdin_open: true
