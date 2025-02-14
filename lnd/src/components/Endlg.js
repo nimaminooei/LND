@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function EndTerenza() {
   return (
@@ -10,7 +11,7 @@ function EndTerenza() {
             <div className="flex flex-col justify-center items-center logo soli cursor-pointer text-[1em] py-[.1em]">
               <div> LEGENDS </div>
               <div> NEVER </div>
-              <div className="swing"> DIE </div> {/* اضافه کردن کلاس swing */}
+              <div className="swing"> DIE </div>
             </div>
           </div>
           <div>
@@ -31,24 +32,17 @@ function EndTerenza() {
             </a>
           </div>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <a
-              href="https://www.instagram.com/soheilghaffarii"
-              className="hover:text-gray-400"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link to="/instagram-links" className="hover:text-gray-400">
               <FaInstagram size={24} />
-            </a>
-            <a
-              href="mailto:your-email@example.com"
-              className="hover:text-gray-400"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaEnvelope size={24} />
-            </a>
+            </Link>
           </div>
-          <p className="text-sm mt-2">© 2025 flex co. All rights reserved.</p>
+          <p className="text-sm mt-2">
+            © 2025{" "}
+            <Link to="/flex" className="text-black">
+              flex.
+            </Link>{" "}
+            All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
