@@ -7,6 +7,7 @@ const images = [
   { src: "a1.jpg", text: "Street fighter " },
   { src: "mario.jpg", text: "Super Mario" },
   { src: "pacman.jpg", text: "Pacman" },
+  { src: "jet.jpg", text: "River Raid" },
 ];
 
 export default function Cart() {

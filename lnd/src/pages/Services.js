@@ -22,7 +22,7 @@ const Services = () => {
         <div>creating any type of website</div>
         <div className="animate__animated animate__flipInY mb-4">
           <a className="text-yellow-500" href="tel:+989392206332">
-            09392206332
+            09371020413
           </a>
         </div>
         <div className="flex space-x-4 mt-4">
